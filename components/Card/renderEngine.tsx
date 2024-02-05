@@ -1,12 +1,11 @@
-import { FC, useMemo } from "react";
-import { useRef } from "react";
+import React from "react";
 import styles from "./index.module.less";
 import type { IComponentItemProps } from './type'
 
 
 // 渲染标题文本
 const renderTitleText = (item: IComponentItemProps, cards: any[]) => {
-  const titleTextStyle = useMemo(() => {
+  const titleTextStyle = () => {
     let result: Record<string, React.CSSProperties> = {};
     if (item.name === "titleText") {
       item?.config.forEach((_item: any) => {
@@ -17,7 +16,7 @@ const renderTitleText = (item: IComponentItemProps, cards: any[]) => {
     }
 
     return result;
-  }, [item, cards]);
+  }
   return <div className={styles["title-text-container"]}>
     {item?.config.map((item2, index2) => {
       return (
@@ -79,11 +78,24 @@ const renderShopInfo = (item: IComponentItemProps, cards: any[])  =>{
     </div>
   </div>;
 }
+// 渲染bannerImg
+const renderBannerImg = (item: IComponentItemProps, cards: any[])  =>{
+
+  const bannerImg = item.config.filter(
+    (_item: { type: string; }) => _item.type === "image"
+  )[0]?.value;
+  console.log('bannerImg =>', bannerImg)
+
+  return <div>
+    <img className={styles.banner_img} src={bannerImg} alt="" />
+  </div>;
+}
 
 // 渲染集合, 在这里注册
 const cardMap:Record<string, any> = {
   'titleText': renderTitleText,
   'shopInfo': renderShopInfo,
+  'bannerImg': renderBannerImg,
 }
 
 export const renderCard = (item: IComponentItemProps, cards: any[]) => {

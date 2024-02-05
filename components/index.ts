@@ -1,5 +1,6 @@
 import { Card } from "./Card";
 import { PreviewHeader } from "./PreviewHeader";
 import { PreviewFooter } from "./PreviewFooter";
+import { PreviewCard } from "./Card/previewRender";
 
-export { Card, PreviewHeader, PreviewFooter };
+export { Card, PreviewCard, PreviewHeader, PreviewFooter };

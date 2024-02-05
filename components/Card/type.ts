@@ -31,8 +31,8 @@ export interface CardProps {
   cards: [] | IComponentItemProps[];
   setCards: React.Dispatch<React.SetStateAction<[] | IComponentItemProps[]>>;
   IDkey: string;
-  compActiveIndex: number | null;
-  setCompActiveIndex: (compActiveIndex: number) => void;
+  compActiveIndex?: number | null;
+  setCompActiveIndex?: (compActiveIndex: number) => void;
 }
 
 export interface DragItem {

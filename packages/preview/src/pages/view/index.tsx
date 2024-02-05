@@ -1,8 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./index.css";
-import { ViewCard } from "../../components/viewCard";
-import { PreviewHeader, PreviewFooter } from "@kxz/components";
-import { IComponentItemProps } from "@kxz/components/Card";
+import { PreviewCard, PreviewHeader, PreviewFooter } from "@kxz/components";
+import { IComponentItemProps } from "@kxz/components/Card/type";
 
 const View = () => {
   const [cards, setCards] = useState<[] | IComponentItemProps[]>([]);
@@ -24,7 +23,7 @@ const View = () => {
         <PreviewHeader />
         <div className="main">
           {cards.map((card, index) => (
-            <ViewCard
+            <PreviewCard
               key={`card-${index}`}
               IDkey={`card-${index}`}
               item={card}

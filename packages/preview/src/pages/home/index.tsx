@@ -8,7 +8,7 @@ import { HTML5Backend } from "react-dnd-html5-backend";
 
 import "./index.less";
 import classNames from "classnames";
-import { IComponentItemProps } from "@kxz/components/Card";
+import { IComponentItemProps } from "@kxz/components/Card/type";
 
 const Home = () => {
   const [cards, setCards] = useState<[] | IComponentItemProps[]>([]); // all component

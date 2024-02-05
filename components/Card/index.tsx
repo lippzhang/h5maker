@@ -73,7 +73,7 @@ export const Card: FC<CardProps> = ({
         );
       }
       item.originalIndex = hoverIndex;
-      setCompActiveIndex(hoverIndex);
+      setCompActiveIndex && setCompActiveIndex(hoverIndex);
     },
   });
 
@@ -105,7 +105,7 @@ export const Card: FC<CardProps> = ({
       })}
       data-handler-id={handlerId}
       onClick={() => {
-        setCompActiveIndex(index);
+        setCompActiveIndex && setCompActiveIndex(index);
       }}
     >
       {renderCard(item, cards)}
