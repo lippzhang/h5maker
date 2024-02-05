@@ -34,14 +34,14 @@ const index = () => {
   //   //@ts-ignore
   //   document.querySelector('.preview').style.top = `${-scrollY + 56 + 16}px`;
   // }, [scrollY])
-
+  
+  console.log('cards =>', cards)
+  console.log('showIframe =>', showIframe)
   return (
     <div className="preview-wrap">
       <iframe
         className="preview-iframe"
         src="http://localhost:3007/preview"
-        scrolling="yes"
-        frameBorder="0"
         id="previewIframe"
         style={{
           visibility: showIframe ? "visible" : "hidden",

@@ -16,6 +16,7 @@ const View = () => {
       }
     });
   }, []);
+  console.log('previec cards =>', cards)
 
   return (
     <div className="view">

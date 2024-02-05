@@ -15,6 +15,7 @@ const index = () => {
         componentList.map(item => (
           <div className="com-item">
             <Thumbnail
+              key={item.name}
               item={item}
               setShowIframe={setShowIframe}
             />
