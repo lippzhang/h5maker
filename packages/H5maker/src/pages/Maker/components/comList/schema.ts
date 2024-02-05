@@ -206,7 +206,14 @@ export const componentList: IComponentItemProps[] = [
     text: '头图',
     name: 'bannerImg',
     icon: 'https://img01.yzcdn.cn/upload_files/2022/06/17/FjAs6eTmbK_4lQRI3GYXu97Fj_B_.png',
-    config: [],
+    config: [
+      {
+        label: "图片",
+        type: "image",
+        format: "background",
+        value: 'https://img01.yzcdn.cn/public_files/2017/07/11/f2a0a05d5a801cb51ecbc0710e6947fb.png'
+      },
+    ],
   },
   {
     text: '配送方式',
