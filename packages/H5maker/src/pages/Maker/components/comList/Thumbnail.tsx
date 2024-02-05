@@ -38,12 +38,13 @@ export const Thumbnail: FC<CardProps> = memo((props) => {
 
   return (
     <div ref={drag} className='thumb-container'>
-      <i
+      <img className="com-item__icon" src={item.icon} alt="" />
+      {/* <i
         className="com-item__icon"
         style={{
           backgroundImage: `url(${item.icon})`,
         }}
-      />
+      /> */}
       <span>
         {item.text}
       </span>

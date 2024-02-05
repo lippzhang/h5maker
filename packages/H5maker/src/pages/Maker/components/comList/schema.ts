@@ -201,5 +201,47 @@ export const componentList: IComponentItemProps[] = [
         ]
       },
     ],
-  }
+  },
+  {
+    text: '头图',
+    name: 'bannerImg',
+    icon: 'https://img01.yzcdn.cn/upload_files/2022/06/17/FjAs6eTmbK_4lQRI3GYXu97Fj_B_.png',
+    config: [],
+  },
+  {
+    text: '配送方式',
+    name: 'deliverType',
+    icon: 'https://img01.yzcdn.cn/upload_files/2022/06/17/FjAs6eTmbK_4lQRI3GYXu97Fj_B_.png',
+    config: [],
+  },
+  {
+    text: '商品分类入口',
+    name: 'goodCategories',
+    icon: 'https://img01.yzcdn.cn/upload_files/2022/06/17/FjAs6eTmbK_4lQRI3GYXu97Fj_B_.png',
+    config: [],
+  },
+  {
+    text: '储值',
+    name: 'discountPlan',
+    icon: 'https://img01.yzcdn.cn/upload_files/2022/06/17/FjAs6eTmbK_4lQRI3GYXu97Fj_B_.png',
+    config: [],
+  },
+  {
+    text: '须知入口',
+    name: 'notice',
+    icon: 'https://img01.yzcdn.cn/upload_files/2022/06/17/FjAs6eTmbK_4lQRI3GYXu97Fj_B_.png',
+    config: [],
+  },
+  {
+    text: '品牌故事',
+    name: 'story',
+    icon: 'https://img01.yzcdn.cn/upload_files/2022/06/17/FjAs6eTmbK_4lQRI3GYXu97Fj_B_.png',
+    config: [],
+  },
+  {
+    text: '联系方式',
+    name: 'concat',
+    icon: '.././../../../icons/concat.png',
+    config: [],
+  },
 ]
